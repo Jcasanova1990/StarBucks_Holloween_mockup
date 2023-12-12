@@ -1,0 +1,667 @@
+/* make hamburger text slide in from right */
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    border-top: solid orange 40px;
+  
+    border-bottom: solid orange 5px;
+  }
+  body {
+    height: 400vh;
+    width: 100vh;
+    display: flex;
+  }
+  
+  /* Top */
+  
+  .logo-img {
+    height: 126px;
+    margin-top: 30%;
+    margin-left: 40%;
+  }
+  
+  /* mid cards */
+  
+  .midctn {
+    display: column;
+    margin-top: 50%;
+    margin-left: 8.5%;
+    gap: 30%;
+    color: white;
+  }
+  .celebrate {
+    animation: textSlide 1s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #006241;
+    border: solid white 15px;
+  }
+  
+  .woot {
+    width: 45rem;
+  }
+  .cbt > button {
+    margin-left: 38%;
+    border: solid white 1px;
+    line-height: 2.2;
+    color: white;
+    font-size: 1rem;
+    background-color: #006241;
+    font-family: "Poppins", sans-serif;
+  }
+  .cbt > button:hover {
+    background-color: #083a29;
+  }
+  
+  .cbt > p {
+    font-size: 1.5rem;
+    width: 45rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+  .cbt > h1 {
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+  
+  .drinks {
+    animation: textSlide 1.3s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f16a26;
+    border: solid white 15px;
+  }
+  
+  .dr {
+    width: 45rem;
+  }
+  .drt > button {
+    margin-left: 42%;
+    border: solid white 1px;
+    line-height: 2.2;
+    color: white;
+    font-size: 1rem;
+    background-color: #f16a26;
+    font-family: "Poppins", sans-serif;
+  }
+  .drt > button:hover {
+    background-color: #a14c21;
+  }
+  
+  .drt > p {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    width: 45rem;
+    text-align: center;
+  }
+  .drt > h1 {
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+  
+  .reward {
+    animation: textSlide 1.6s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e3932;
+    border: solid white 15px;
+  }
+  
+  .rw {
+    width: 45rem;
+  }
+  .rwt > button {
+    margin-left: 45%;
+    border: solid white 1px;
+    line-height: 2.2;
+    color: white;
+    font-size: 1rem;
+    background-color: #1e3932;
+    font-family: "Poppins", sans-serif;
+  }
+  .rwt > button:hover {
+    background-color: #0e201c;
+  }
+  .rwt > p {
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    width: 45rem;
+    text-align: center;
+  }
+  .rwt > h1 {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+  
+  .treat {
+    animation: textSlide 2s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #78212e;
+    border: solid white 15px;
+  }
+  
+  .tr {
+    width: 45rem;
+  }
+  .trt > button {
+    margin-left: 45%;
+    border: solid #d69a2d 1px;
+    line-height: 2.2;
+    color: #d69a2d;
+    font-size: 1rem;
+    background-color: #78212e;
+    font-family: "Poppins", sans-serif;
+  }
+  .trt > button:hover {
+    background-color: #531922;
+  }
+  
+  .trt > p {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    width: 45rem;
+    text-align: center;
+    color: #d69a2d;
+  }
+  .trt > h1 {
+    color: #d69a2d;
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+  
+  .ddash {
+    animation: textSlide 2.3s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e3932;
+    border: solid white 15px;
+  }
+  
+  .dd {
+    width: 45rem;
+  }
+  .ddt > button {
+    margin-left: 45%;
+    border: solid white 1px;
+    line-height: 2.2;
+    color: white;
+    background-color: #1e3932;
+    font-family: "Poppins", sans-serif;
+  }
+  .ddt > button:hover {
+    background-color: #0e201c;
+  }
+  .ddt > p {
+    font-family: "Poppins", sans-serif;
+    width: 45rem;
+    text-align: center;
+  }
+  .ddt > h1 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+  
+  /* media cards */
+  
+  .mediactn {
+    display: flex;
+    align-items: flex-end;
+    margin-left: -150%;
+    gap: 20.5%;
+  }
+  
+  .cnn-btn:hover {
+    color: orange;
+  }
+  .nyt-btn:hover {
+    color: orange;
+  }
+  .cbs-btn:hover {
+    color: orange;
+  }
+  .nbc-btn:hover {
+    color: orange;
+  }
+  
+  button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+  }
+  
+  .cnn-btn > img {
+    width: 10rem;
+  }
+  
+  .cnn-btn > button {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://media.cnn.com/api/v1/images/stellar/prod/230807091336-iced-tea-starbucks-file.jpg?c=16x9&q=h_720,w_1280,c_fill");
+    margin-left: 20%;
+    height: 8rem;
+    width: 12rem;
+  }
+  
+  .cnn-btn > h1 {
+    text-align: center;
+    margin-right: -35%;
+  }
+  
+  .nyt-btn > img {
+    width: 10rem;
+  }
+  
+  .nyt-btn > button {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://static01.nyt.com/images/2023/09/27/dining/27pumpkin-Spice/27Pour-thumbWide.jpg?quality=75&auto=webp&disable=upscale");
+    margin-left: 20%;
+    height: 8rem;
+    width: 12rem;
+  }
+  
+  .nyt-btn > h1 {
+    text-align: center;
+    margin-right: -35%;
+  }
+  
+  .cbs-btn > img {
+    width: 10rem;
+  }
+  
+  .cbs-btn > button {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://assets3.cbsnewsstatic.com/hub/i/r/2023/10/02/0a907a01-f178-4779-8be1-c832a69b9265/thumbnail/640x360/fba38544894159014f37decb52414cf1/manuela-guillens-art-studio-hispanic-heritage-month.jpg?v=a6a127b4a243923dd1e2140b75f2a43c#");
+    margin-left: 20%;
+    height: 8rem;
+    width: 12rem;
+  }
+  
+  .cbs-btn > h1 {
+    text-align: center;
+    margin-right: -35%;
+  }
+  
+  .nbc-btn > img {
+    width: 10rem;
+  }
+  
+  .nbc-btn > button {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/streams/2012/September/120905/522589-120905-biz-starbucks-130p.jpg");
+    margin-left: 20%;
+    height: 8rem;
+    width: 12rem;
+  }
+  
+  .nbc-btn > h1 {
+    text-align: center;
+    margin-right: -35%;
+  }
+  
+  /* Navigation tools */
+  
+  .navigation__checkbox {
+    display: none;
+  }
+  
+  .navigation__button {
+    background-color: black;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .navigation__background {
+    height: 0.9rem;
+    width: 0.7rem;
+    border-radius: 0;
+    position: fixed;
+    top: 8rem;
+    right: 8rem;
+  
+    background-image: radial-gradient(orange, chocolate);
+    z-index: 1000;
+    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  
+  .navigation__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -4rem;
+    z-index: 1500;
+    opacity: 0;
+    width: 0;
+    transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  
+  .navigation__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+  }
+  
+  .navigation__item {
+    margin: 1rem;
+  }
+  
+  .navigation__link:link,
+  .navigation__link:visited {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      #fff 50%
+    );
+    background-size: 220%;
+    transition: all 0.4s;
+  }
+  .navigation__link:link span,
+  .navigation__link:visited span {
+    margin-right: 1.5rem;
+    display: inline-block;
+  }
+  
+  .navigation__link:hover,
+  .navigation__link:active {
+    background-position: 85%;
+    color: black;
+    transform: translateX(1rem);
+  }
+  
+  .navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(80);
+  }
+  
+  .navigation__checkbox:checked ~ .navigation__nav {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+  }
+  
+  .navigation__icon {
+    position: relative;
+    margin-top: 3.5rem;
+  }
+  
+  .navigation__icon,
+  .navigation__icon::before,
+  .navigation__icon::after {
+    width: 4rem;
+    height: 1px;
+    background-color: white;
+    display: inline-block;
+  }
+  
+  .navigation__icon::before,
+  .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 2s;
+  }
+  
+  .navigation__icon::before {
+    top: -0.8rem;
+  }
+  .navigation__icon::after {
+    top: 0.8rem;
+  }
+  .navigation__button:hover .navigation__icon::before {
+    top: -1rem;
+  }
+  
+  .navigation__button:hover .navigation__icon::after {
+    top: 1rem;
+  }
+  
+  .navigation__checkbox:checked + .navigation__button .navigation__icon {
+    background-color: transparent;
+  }
+  
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+  
+  /* bottom */
+  .botctn1 {
+    margin-right: 100%;
+  }
+  .bot1c1 {
+    position: absolute;
+    bottom: -350%;
+    right: 78.5%;
+    text-align: left;
+  }
+  .bot1c1 > h2 {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .bot1c1 > h2 > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 2.5;
+    font-size: 18px;
+    color: gray;
+  }
+  .bot1c1 > h2 > ul > :hover {
+    cursor: pointer;
+    color: black;
+  }
+  
+  .bot1c2 {
+    position: absolute;
+    bottom: -349.8%;
+    right: 63%;
+    text-align: left;
+  }
+  .bot1c2 > h2 {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .bot1c2 > h2 > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 2.5;
+    font-size: 18px;
+    color: gray;
+  }
+  .bot1c2 > h2 > ul > :hover {
+    cursor: pointer;
+    color: black;
+  }
+  
+  .bot1c3 {
+    position: absolute;
+    bottom: -335.3%;
+    right: 50%;
+    text-align: left;
+  }
+  .bot1c3 > h2 {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .bot1c3 > h2 > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 2.5;
+    font-size: 18px;
+    color: gray;
+  }
+  .bot1c3 > h2 > ul > :hover {
+    cursor: pointer;
+    color: black;
+  }
+  
+  .bot1c4 {
+    position: absolute;
+    bottom: -335.3%;
+    right: 36.4%;
+    text-align: left;
+  }
+  .bot1c4 > h2 {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .bot1c4 > h2 > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    font-size: 18px;
+    color: gray;
+  }
+  .bot1c4 > h2 > ul > :hover {
+    cursor: pointer;
+    color: black;
+  }
+  
+  .bot1c5 {
+    position: absolute;
+    bottom: -339%;
+    right: 23%;
+    text-align: left;
+  }
+  .bot1c5 > h2 {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .bot1c5 > h2 > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    font-size: 18px;
+    color: gray;
+  }
+  
+  .bot1c5 > h2 > ul > :hover {
+    cursor: pointer;
+    color: black;
+  }
+  /* icons */
+  
+  .mdicons > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    bottom: -360%;
+    right: 68%;
+    gap: 20%;
+  }
+  .mdicons > ul > li > span {
+    border: solid orange 5px;
+    font-size: 3rem;
+  }
+  .mdicons > ul > li > span:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+    animation: textGloworange 920ms infinite;
+  }
+  /* bottom 2 */
+  
+  .bot2c1 > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    bottom: -365%;
+    right: 38.5%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    word-spacing: 4px;
+  }
+  .bot2c1 > ul > li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  /* footer */
+  footer > h5 {
+    display: flex;
+    position: absolute;
+    bottom: -377%;
+    right: 66.2%;
+    font-size: 1rem;
+    color: grey;
+    border-bottom: solid white 3rem;
+  }
+  /* key frame animations */
+  @keyframes textSlide {
+    0% {
+      transform: translateX(-100rem);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+  @keyframes textGloworange {
+    0% {
+      text-shadow: none;
+    }
+    50% {
+      text-shadow: 0 0 10px orange;
+    }
+    100% {
+      text-shadow: none;
+    }
+  }
+  
